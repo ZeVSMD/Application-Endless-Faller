@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameScene: Game
+  playButton: {fileID: 1190138943}
   highScore: {fileID: 1763594200}
   getReady: {fileID: 1840159041}
 --- !u!4 &389219362

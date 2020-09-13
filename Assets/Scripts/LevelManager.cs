@@ -66,6 +66,7 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = Time.timeScale == 0 ? 1 : 0;
         escPopup.active = !escPopup.active;
+        escPopup.transform.GetChild(0).GetComponent<Button>().Select();
     }
 
     public void Fail()
@@ -74,6 +75,7 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 0;
         SaveHighScore();
         failPopup.SetActive(true);
+        failPopup.transform.GetChild(0).GetComponent<Button>().Select();
     }
 
     public void Reset()
