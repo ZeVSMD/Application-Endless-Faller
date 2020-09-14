@@ -104,6 +104,7 @@ public class LevelManager : MonoBehaviour
     public void Exit()
     {
         Time.timeScale = 1;
+        SaveHighScore();
         SceneManager.LoadScene(HomeSceneName);
     }
 
@@ -119,7 +120,7 @@ public class LevelManager : MonoBehaviour
         Score++;
     }
 
-    void SaveHighScore()
+    public void SaveHighScore()
     {
         if (Score > PlayerPrefs.GetInt("HS"))
         {
