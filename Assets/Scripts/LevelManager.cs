@@ -89,9 +89,9 @@ public class LevelManager : MonoBehaviour
 
         platforms = GameObject.FindGameObjectsWithTag("Platform");
 
-        foreach (var platform in platforms)
+        for (int i = 0; i < platforms.Length; i++)
         {
-            Destroy(platform);
+            Destroy(platforms[i]);
         }
 
         platformSpeed = initialSpeed;
